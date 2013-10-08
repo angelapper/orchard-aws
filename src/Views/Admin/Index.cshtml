@@ -1,0 +1,29 @@
+﻿﻿@model Apper.Aws.ViewModels.AwsSettingsViewModel
+<style type="text/css">
+    select { width: 150px; }
+</style>
+
+@using (Html.BeginFormAntiForgeryPost()) {
+    Html.ValidationSummary();
+    
+    <fieldset>
+        @Html.TextBoxFor(m => m.AccessKey)@T("Amazon Acess Key")
+    </fieldset>
+    
+    <fieldset>
+        @Html.TextBoxFor(m => m.SecretKey)@T("Amazon Secret Key")
+    </fieldset>
+                
+    <fieldset>
+        @Html.TextBoxFor(m => m.FileBucket)@T("S3 Media Bucket Name")
+    </fieldset>
+    
+    <fieldset>
+        @Html.TextBoxFor(m => m.LoggingBucket)@T("System Logging Bucket Name")
+    </fieldset>
+    
+    <fieldset>
+        <legend></legend>
+        <button class="primaryAction" type="submit" name="submit.Save" value="submit.Save">@T("Save")</button>
+    </fieldset>
+}

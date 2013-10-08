@@ -1,0 +1,10 @@
+﻿Name: Apper.Aws
+AntiForgery: enabled
+Author: Angelapper
+Website: http://www.angelapper.com
+Version: 1.0
+OrchardVersion: 1.0
+Description: Description for the module
+Features:
+    Apper.Aws:
+        Description: Description for feature Apper.Aws.
